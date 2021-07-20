@@ -1,8 +1,8 @@
 /* flex container 100vh */
 .App {
   /* text-align: center; */
-  width: 100vw;
-  height: 100vh;
+  min-width: 100vw;
+  min-height: 100vh;
 }
 
 .flex-container {
