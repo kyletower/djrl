@@ -89,6 +89,7 @@ function App() {
 
     // register user up vote
     userUpVoted += ' ' + song.id;
+    localStorage.setItem('userUpVoted', userUpVoted);
     console.log('user up voted:', userUpVoted);
   };
 
