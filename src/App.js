@@ -143,7 +143,7 @@ function App() {
 
   return (
     <div className='App'>
-      <header className='App-header'>
+      <div className='flex-container'>
         <Navbar showHideSearch={showHideSearch} showHideQueue={showHideQueue} />
 
         {showSearch && <Search addToQueue={addToQueue} />}
@@ -159,7 +159,7 @@ function App() {
             markAsPlayed={markAsPlayed}
           />
         )}
-      </header>
+      </div>
       <p>end of div in app.js</p>
     </div>
   );

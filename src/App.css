@@ -1,15 +1,18 @@
 /* flex container 100vh */
 .App {
   /* text-align: center; */
+  width: 100vw;
+  height: 100vh;
 }
 
-.App-header {
+.flex-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border: 10px solid mistyrose;
+  border: 10px solid goldenrod;
   background-color: #282c34;
-  height: 100vh;
+  height: 100%;
+  width: 100%;
   align-items: center;
   font-size: calc(8px + 1vmin);
   color: white;
@@ -33,8 +36,6 @@ p {
   padding: 5px;
   width: 50%;
   border-radius: 5px;
-  /* justify-content: space-between; */
-  /* background-color: rgb(158, 141, 148); */
   background-color: rgb(197, 81, 129);
 }
 
@@ -52,14 +53,16 @@ button:hover {
   /* width: 50px; */
   /* border: 1px solid pink; */
   align-self: center;
-  padding: 5px;
+  padding: 10px;
   /* flex: 1 1 35px; */
 }
 
 .song-info {
   /* display: flex; */
+  /* flex-direction: column; */
   /* display: block; */
   /* flex: 5; */
+  flex-wrap: wrap;
   width: 100%;
   flex-direction: column;
   margin: 5px;
