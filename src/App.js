@@ -110,7 +110,7 @@ function App() {
 
     if (duplicate) {
       // change color to green and switch + to ✅ when added
-      event.target.parentElement.className = 'added-to-queue';
+      event.target.parentElement.classList.add('added-to-queue');
       event.target.innerText = '✅';
       return;
     }
@@ -126,7 +126,7 @@ function App() {
       });
 
     // change color to green and switch + to ✅ when added
-    event.target.parentElement.className = 'added-to-queue';
+    event.target.parentElement.classList.add('added-to-queue');
     event.target.innerText = '✅';
     console.log(event);
   };
