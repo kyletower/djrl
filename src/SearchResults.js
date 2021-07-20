@@ -56,7 +56,9 @@ const SearchResults = ({ searchResults, addToQueue }) => {
             <div className='add-to-queue'>
               <button
                 className='btn-add-to-queue'
-                onClick={(event) => addToQueue(name, artist, mbid, event)}
+                onClick={(event) =>
+                  addToQueue(name, artist, mbid, images[i], event)
+                }
               >
                 ➕
               </button>

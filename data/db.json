@@ -30,6 +30,25 @@
       "mbid": "",
       "userId": "1626726645387",
       "id": 34
+    },
+    {
+      "songTitle": "Heathens",
+      "artistName": "Twenty One Pilots",
+      "upVotes": 1,
+      "downVotes": 0,
+      "mbid": "",
+      "userId": "1626726645387",
+      "id": 35
+    },
+    {
+      "songTitle": "All Time Low",
+      "artistName": "Jon Bellion",
+      "upVotes": 1,
+      "downVotes": 0,
+      "mbid": "",
+      "albumArt": "https://lastfm.freetls.fastly.net/i/u/34s/bf8ec059d42aa299906032caabec36fb.png",
+      "userId": "1626726645387",
+      "id": 36
     }
   ],
   "played": []

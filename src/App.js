@@ -76,7 +76,7 @@ function App() {
     });
   };
 
-  const addToQueue = (songTitle, artistName, mbid, event) => {
+  const addToQueue = (songTitle, artistName, mbid, albumArt, event) => {
     // create newSong object with 1 upVotes
     const newSong = {
       songTitle,
@@ -84,6 +84,7 @@ function App() {
       upVotes: 1,
       downVotes: 0,
       mbid,
+      albumArt,
       userId,
     };
 
