@@ -10,11 +10,17 @@ export const sortByVotes = 'sortByVotes';
 export const userId =
   localStorage.getItem('userId') || localStorage.setItem('userId', Date.now());
 
+let userUpVoted =
+  localStorage.getItem('userUpVoted') ||
+  localStorage.setItem('userUpVoted', JSON.stringify([]));
+
 function App() {
   // initial render
   useEffect(() => {
-    console.log({ userId });
     console.log('use effect ran');
+    console.log({ userId });
+    console.log({ userUpVoted });
+
     loadQueue();
   }, []);
 
@@ -55,6 +61,12 @@ function App() {
 
   // vote will be the attribute upVotes or downVotes
   const updateVotes = (song, votes) => {
+    if (userUpVoted.indexOf(song.id) >= 0) {
+      console.log(`you've already up voted that song`);
+      // remove up vote
+      return;
+    }
+
     const updatedVotes = song[votes] + 1;
 
     fetch('http://localhost:8000/queue/' + song.id, {
@@ -65,7 +77,7 @@ function App() {
       }),
     })
       .then((res) => res.json())
-      .then((json) => console.table('json', json));
+      .then((json) => console.table('json from db.json', json));
 
     // update gui for upVotes
     queue.forEach((q) => {
@@ -74,6 +86,10 @@ function App() {
         setQueue([...queue]);
       }
     });
+
+    // register user up vote
+    userUpVoted += ' ' + song.id;
+    console.log('user up voted:', userUpVoted);
   };
 
   const addToQueue = (songTitle, artistName, mbid, albumArt, event) => {

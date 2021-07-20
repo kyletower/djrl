@@ -3,7 +3,7 @@
     {
       "songTitle": "Stupid Deep",
       "artistName": "Jon Bellion",
-      "upVotes": 29,
+      "upVotes": 31,
       "downVotes": 20,
       "id": 8
     },
@@ -90,6 +90,25 @@
       "albumArt": "https://lastfm.freetls.fastly.net/i/u/34s/0863c71d31bb44cac11348120d162976.png",
       "userId": "1626726645387",
       "id": 41
+    },
+    {
+      "songTitle": "The Incredible True Story",
+      "artistName": "Logic",
+      "upVotes": 1,
+      "downVotes": 0,
+      "mbid": "",
+      "albumArt": "https://lastfm.freetls.fastly.net/i/u/34s/985c093bb6f966b893f0b7049b6673ef.jpg",
+      "userId": "1626726645387",
+      "id": 42
+    },
+    {
+      "songTitle": "Help My Unbelief",
+      "artistName": "Red Mountain Church",
+      "upVotes": 1,
+      "downVotes": 0,
+      "mbid": "6679bacf-b66d-49ae-8b90-453bb4190f31",
+      "userId": "1626726645387",
+      "id": 43
     }
   ],
   "played": []
