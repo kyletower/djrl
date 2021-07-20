@@ -1,0 +1,73 @@
+npm start
+npx json-server --watch data/db.json --port 8000
+
+router?
+single page?
+show/hide?
+
+album art cover? https://www.npmjs.com/package/music-cover
+
+http://localhost:8000/queue?_sort=upVotes&_order=desc
+
+don't allow duplicates in the queue
+
+list all parties
+create a party
+join a party
+
+when there is a change to the queue (song is added, votes are changed), all clients should be 
+updated to reflect that change.
+
+=====
+TO DO
+- add urls to db.json
+- display album art in queue
+- style
+
+======
+Idea: A web app for mobile Internet browsers (i.e. Safari, Chrome, Firefox) where party guests can quickly send requests to the DJ as well as vote requests up or down. The app is simple/minimal so as not to distract from the dancing at the party.
+
+Must have:
+- No login required
+- generate a userId (datetime.now()?), store in local storage, auth who requested what, throttle votes
+  - using uuid
+  - using math.random
+  - using date.now()
+- Use Google Music API, Apple Music API, Spotify Music API, or Last.fm Music API. Spotify is preferred; however, Last.fm may be most viable to avoid account validation.
+  - https://www.last.fm/api/show/track.search
+- Simple GUI so as not to distract from dancing/event
+- DJ login to pre-build playlist
+- Party host login to pre-build playlist
+- Guest login to pre-build playlist
+- Create a party: public or private
+- User can rate other requests with a thumbs up or down
+- User cannot spam the thumbs up or down
+- Event location and/or venue name
+- Event date
+
+Nice to have:
+- Now playing...
+- DJ can see Beats Per Minute (BPM)
+- Timer: if user is on app longer than 2 minutes have a message saying, "don't forget to party" 
+- User may choose to create a username for shoutouts associated with their requests
+- Livestream/feed of what’s currently playing and what’s up next and what has been previously played.
+- DJ can reply to user request with, “I got you / Rejected / Already Requested/played / etc”
+- DJ login to be able to Create parties.
+- View requests from past parties
+- View playlist from past parties
+- Upcoming public events/parties
+- Visual representation (Wordcloud) for DJ and guests to see what is most requested.
+- Stats: all-time most requested songs, all-time most played songs, all-time most downvoted songs
+- Push notify: DJ is playing your song soon
+- Hype/woot button for social media.
+- More/less like this track, more/less of this genre, faster, slower
+- Geofence parties that only people at the party are able to join
+- Option for user: Send me the playlist via email / text
+- Option for user: Send me the request list via email / text
+- Activity Meter for number of votes in the past 10 minutes
+- Disable/gray out the up or down vote if user has already up or down voted that request
+- Billboard.com charts integration
+
+Design:
+- Rob Green
+- Ivan Witteborg: https://www.figma.com/proto/H7sIv4UCnWknWtzl7AT5ppFv/PlayThat_01?node-id=1%3A669&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=1%3A363

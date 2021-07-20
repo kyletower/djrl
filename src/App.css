@@ -1,0 +1,89 @@
+/* flex container 100vh */
+.App {
+  /* text-align: center; */
+}
+
+.App-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 10px solid mistyrose;
+  background-color: #282c34;
+  height: 100vh;
+  align-items: center;
+  font-size: calc(8px + 1vmin);
+  color: white;
+}
+
+.added-to-queue {
+  color: green;
+}
+
+p {
+  line-height: 0px;
+  text-align: left;
+}
+
+.search-result,
+.queue-item {
+  display: flex;
+  flex-direction: row;
+  /* border: 10px solid goldenrod; */
+  margin: 10px;
+  padding: 5px;
+  width: 50%;
+  border-radius: 5px;
+  /* justify-content: space-between; */
+  /* background-color: rgb(158, 141, 148); */
+  background-color: rgb(197, 81, 129);
+}
+
+button {
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  /* background-color: yellow; */
+  transform: scale(1.1);
+}
+
+.album-art {
+  /* flex-basis: 50px; */
+  /* width: 50px; */
+  /* border: 1px solid pink; */
+  align-self: center;
+  padding: 5px;
+  /* flex: 1 1 35px; */
+}
+
+.song-info {
+  /* display: flex; */
+  /* display: block; */
+  /* flex: 5; */
+  width: 100%;
+  flex-direction: column;
+  margin: 5px;
+  padding: 2px;
+  /* border: 1px solid red; */
+}
+
+.song-name {
+  font-weight: bold;
+  flex-wrap: wrap;
+  /* font-stretch: ultra-expanded; */
+  /* width: 10em; */
+}
+
+.artist-name {
+  font-size: calc(6px + 1vmin);
+}
+
+.add-to-queue {
+  /* display: block; */
+  /* width: 100%; */
+  /* height: 100%; */
+  /* border: 1px solid green; */
+  align-self: center;
+  text-align: right;
+  /* justify-self: flex-end; */
+}

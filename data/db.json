@@ -1,0 +1,36 @@
+{
+  "queue": [
+    {
+      "songTitle": "Stupid Deep",
+      "artistName": "Jon Bellion",
+      "upVotes": 29,
+      "downVotes": 20,
+      "id": 8
+    },
+    {
+      "songTitle": "Astronaut In The Ocean",
+      "artistName": "Masked Wolf",
+      "upVotes": 0,
+      "downVotes": 0,
+      "id": 17
+    },
+    {
+      "songTitle": "The Adventure",
+      "artistName": "Angels & Airwaves",
+      "upVotes": 5,
+      "downVotes": 0,
+      "userId": "1626726645387",
+      "id": 24
+    },
+    {
+      "songTitle": "Good Things Fall Apart (with Jon Bellion)",
+      "artistName": "Illenium",
+      "upVotes": 3,
+      "downVotes": 1,
+      "mbid": "",
+      "userId": "1626726645387",
+      "id": 34
+    }
+  ],
+  "played": []
+}
