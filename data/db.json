@@ -3,8 +3,8 @@
     {
       "songTitle": "Stupid Deep",
       "artistName": "Jon Bellion",
-      "upVotes": 36,
-      "downVotes": 20,
+      "upVotes": 43,
+      "downVotes": 26,
       "id": 8
     },
     {
@@ -18,7 +18,7 @@
       "songTitle": "The Adventure",
       "artistName": "Angels & Airwaves",
       "upVotes": 10,
-      "downVotes": 1,
+      "downVotes": 2,
       "userId": "1626726645387",
       "id": 24
     },
@@ -34,7 +34,7 @@
     {
       "songTitle": "All Time Low",
       "artistName": "Jon Bellion",
-      "upVotes": 1,
+      "upVotes": 2,
       "downVotes": 0,
       "mbid": "",
       "albumArt": "https://lastfm.freetls.fastly.net/i/u/34s/bf8ec059d42aa299906032caabec36fb.png",
@@ -142,13 +142,52 @@
       "id": 54
     },
     {
-      "songTitle": "This I Promise You",
-      "artistName": "*NSYNC",
-      "upVotes": 1,
+      "songTitle": "Voices",
+      "artistName": "Saosin",
+      "upVotes": null,
       "downVotes": 0,
-      "mbid": "d2c36a97-6596-439e-9018-3d9ff08278c1",
+      "mbid": "a2376b85-1702-4320-9a8f-a754d0499162",
       "userId": "1626726645387",
       "id": 55
+    },
+    {
+      "songTitle": "Slow Motion",
+      "artistName": "Trey Songz",
+      "upVotes": 1,
+      "downVotes": 0,
+      "mbid": "",
+      "albumArt": "https://lastfm.freetls.fastly.net/i/u/34s/217aaf8b4bd469c3f0a8eb1e26a922d6.jpg",
+      "userId": "1626726645387",
+      "id": 56
+    },
+    {
+      "songTitle": "Panda",
+      "artistName": "Desiigner",
+      "upVotes": null,
+      "downVotes": 0,
+      "mbid": "",
+      "albumArt": "https://lastfm.freetls.fastly.net/i/u/34s/343ff4db3d1fe977aaf1fc9bbee169a9.jpg",
+      "userId": "1626726645387",
+      "id": 57
+    },
+    {
+      "songTitle": "Whoa",
+      "artistName": "Paramore",
+      "upVotes": null,
+      "downVotes": 0,
+      "mbid": "3a000fbf-c95f-418d-abd6-5d493e5c2d4f",
+      "userId": "1626726645387",
+      "id": 58
+    },
+    {
+      "songTitle": "All Around Me",
+      "artistName": "Flyleaf",
+      "upVotes": 0,
+      "downVotes": 0,
+      "mbid": "97c21d47-36dd-4998-8ca4-b1fb845ff6cc",
+      "albumArt": "https://lastfm.freetls.fastly.net/i/u/34s/46366a857ac26bf8f20904262c2079d0.jpg",
+      "userId": "1626726645387",
+      "id": 59
     }
   ],
   "played": []

@@ -2,7 +2,6 @@ import './App.css';
 import Navbar from './Navbar';
 import Search from './Search';
 import SongQueue from './SongQueue';
-
 import { useState, useEffect } from 'react';
 
 export const sortByTime = 'sortByTime';
@@ -72,6 +71,14 @@ function App() {
       // register user up vote
       userUpVotedArray.push(song.id);
       localStorage.setItem('userUpVoted', JSON.stringify(userUpVotedArray));
+
+      // if (userDownVotedArray.includes(song.id)) {
+      //   userDownVotedArray.splice(userDownVotedArray.indexOf(song.id));
+      //   localStorage.setItem(
+      //     'userDownVoted',
+      //     JSON.stringify(userDownVotedArray)
+      //   );
+      // }
     } else if (value === -1) {
       // unregister up vote from local storage
       userUpVotedArray.splice(userUpVotedArray.indexOf(song.id));
@@ -91,11 +98,16 @@ function App() {
       value = -1;
     }
 
-    // register or unregister up vote
+    // register or unregister down vote
     if (value === 1) {
       // register user down vote
       userDownVotedArray.push(song.id);
       localStorage.setItem('userDownVoted', JSON.stringify(userDownVotedArray));
+
+      // if (userUpVotedArray.includes(song.id)) {
+      //   userUpVotedArray.splice(userUpVotedArray.indexOf(song.id));
+      //   localStorage.setItem('userUpVoted', JSON.stringify(userUpVotedArray));
+      // }
     } else if (value === -1) {
       // unregister down vote from local storage
       userDownVotedArray.splice(userDownVotedArray.indexOf(song.id));
@@ -107,16 +119,6 @@ function App() {
 
   // vote will be the attribute upVotes or downVotes
   const updateVotes = (song, votes, value) => {
-    // let value = 1;
-    // userUpVotedArray = JSON.parse(localStorage.getItem('userUpVoted'));
-
-    // if (userUpVotedArray.includes(song.id)) {
-    //   console.log(`you've already up voted that song, removing your vote`);
-
-    //   // change value to -1 instead of +1
-    //   value = -1;
-    // }
-
     const updatedVotes = song[votes] + value;
 
     // patch
@@ -136,17 +138,6 @@ function App() {
         setQueue([...queue]);
       }
     });
-
-    // // register or unregister up vote
-    // if (value === 1) {
-    //   // register user up vote
-    //   userUpVotedArray.push(song.id);
-    //   localStorage.setItem('userUpVoted', JSON.stringify(userUpVotedArray));
-    // } else if (value === -1) {
-    //   // unregister up vote from local storage
-    //   userUpVotedArray.splice(userUpVotedArray.indexOf(song.id));
-    //   localStorage.setItem('userUpVoted', JSON.stringify(userUpVotedArray));
-    // }
   };
 
   // add the search request song to the queue
@@ -173,7 +164,7 @@ function App() {
         newSong.artistName === request.artistName
       ) {
         duplicate = true;
-        updateVotes(request, 'upVotes');
+        upVote(request);
         return; // why doesn't this exit the addToQueue function?, it only exits the .forEach?
       }
     });

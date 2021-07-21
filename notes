@@ -1,29 +1,31 @@
 npm start
 npx json-server --watch data/db.json --port 8000
 
-router?
-single page?
-show/hide?
-
 album art cover? https://www.npmjs.com/package/music-cover
 
 Sort db.json
 http://localhost:8000/queue?_sort=upVotes&_order=desc
 
-don't allow duplicates in the queue
-
-list all parties
-create a party
-join a party
-
-when there is a change to the queue (song is added, votes are changed), all clients should be 
-updated to reflect that change.
 
 =====
 TO DO
-- add urls to db.json
-- display album art in queue
 - style
+- list all parties
+- create a party
+- join a party
+- when there is a change to the queue (song is added, votes are changed), all clients should be 
+updated to reflect that change.
+
+======
+KNOWN ISSUES
+code:
+- green check mark remains after searching for another song
+- clicking green checkmark after adding song produces NaN for up vote counter
+- album cover art flickers before settling
+- old album cover art remains after new search
+
+style: 
+- text overlapping for longer song names
 
 ======
 Idea: A web app for mobile Internet browsers (i.e. Safari, Chrome, Firefox) where party guests can quickly send requests to the DJ as well as vote requests up or down. The app is simple/minimal so as not to distract from the dancing at the party.

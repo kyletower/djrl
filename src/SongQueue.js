@@ -43,7 +43,6 @@ const SongQueue = ({
       >
         Sort By Likes/Time Added
       </button>
-      {/* <div className='songs-in-queue'> */}
       {!onlyMyRequests &&
         queue.map((song) => (
           <div className='queue-item' key={song.id}>
@@ -99,29 +98,3 @@ const SongQueue = ({
 };
 
 export default SongQueue;
-/*
-<div className='search-result'>
-  <div className='album-art'>
-    <img
-      src={
-        images[i] ||
-        'https://www.last.fm/static/images/defaults/player_default_album.430223706b14.png'
-      }
-      width='34'
-      alt=''
-    />
-  </div>
-  <div className='song-info'>
-    <p className='song-name'>{name}</p>
-    <p className='artist-name'>{artist}</p>
-  </div>
-  <div className='add-to-queue'>
-    <button
-      className='btn-add-to-queue'
-      onClick={(event) => addToQueue(name, artist, mbid, event)}
-    >
-      ➕
-    </button>
-  </div>
-</div>;
-*/

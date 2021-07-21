@@ -1,11 +1,11 @@
 import { useState } from 'react';
 import SearchResults from './SearchResults';
 
-const API_KEY = 'e4de1cb320336b47aba4805ec9cc8dee';
+export const API_KEY = 'e4de1cb320336b47aba4805ec9cc8dee';
 
 const Search = ({ addToQueue }) => {
   const MINIMUM_SEARCH_LENGTH = 2;
-  const NUMBER_OF_SEARCH_RESULTS = 3;
+  const NUMBER_OF_SEARCH_RESULTS = 5;
   const [searchResults, setSearchResults] = useState([]);
 
   function debounce(func, timeout = 300) {

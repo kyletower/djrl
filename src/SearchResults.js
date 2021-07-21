@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
+import { API_KEY } from './Search';
+// Debounce: https://www.freecodecamp.org/news/javascript-debounce-example/
 
-// https://www.freecodecamp.org/news/javascript-debounce-example/
-
-const API_KEY = 'e4de1cb320336b47aba4805ec9cc8dee';
+// const API_KEY = 'e4de1cb320336b47aba4805ec9cc8dee';
 // localStorage to track whether local user has up/downvoted.
 const SearchResults = ({ searchResults, addToQueue }) => {
   const [images, setImages] = useState({});
@@ -30,7 +30,7 @@ const SearchResults = ({ searchResults, addToQueue }) => {
         });
     });
   }, [searchResults]);
-  // console.log({ images });
+
   return (
     <>
       <h3>Results</h3>
@@ -45,7 +45,7 @@ const SearchResults = ({ searchResults, addToQueue }) => {
                   'https://www.last.fm/static/images/defaults/player_default_album.430223706b14.png'
                 }
                 width='34'
-                // remove width
+                height='34'
                 alt=''
               />
             </div>
