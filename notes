@@ -7,6 +7,7 @@ show/hide?
 
 album art cover? https://www.npmjs.com/package/music-cover
 
+Sort db.json
 http://localhost:8000/queue?_sort=upVotes&_order=desc
 
 don't allow duplicates in the queue

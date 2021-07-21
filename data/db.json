@@ -17,7 +17,7 @@
     {
       "songTitle": "The Adventure",
       "artistName": "Angels & Airwaves",
-      "upVotes": 7,
+      "upVotes": 10,
       "downVotes": 0,
       "userId": "1626726645387",
       "id": 24
@@ -25,7 +25,7 @@
     {
       "songTitle": "Good Things Fall Apart (with Jon Bellion)",
       "artistName": "Illenium",
-      "upVotes": 3,
+      "upVotes": 6,
       "downVotes": 1,
       "mbid": "",
       "userId": "1626726645387",
@@ -109,6 +109,15 @@
       "mbid": "6679bacf-b66d-49ae-8b90-453bb4190f31",
       "userId": "1626726645387",
       "id": 43
+    },
+    {
+      "songTitle": "Good Riddance (Time of Your Life)",
+      "artistName": "Green Day",
+      "upVotes": 2,
+      "downVotes": 0,
+      "mbid": "025161a4-d925-45c9-a2aa-f34d1dcebbf7",
+      "userId": "1626726645387",
+      "id": 44
     }
   ],
   "played": []

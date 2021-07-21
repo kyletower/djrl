@@ -61,13 +61,19 @@ function App() {
 
   // vote will be the attribute upVotes or downVotes
   const updateVotes = (song, votes) => {
-    if (userUpVoted.indexOf(song.id) >= 0) {
-      console.log(`you've already up voted that song`);
-      // remove up vote
-      return;
+    let value = 1;
+    let userUpVotedArray = JSON.parse(localStorage.getItem('userUpVoted'));
+
+    if (userUpVotedArray.includes(song.id)) {
+      console.log(`you've already up voted that song, removing your vote`);
+
+      // change value to -1 instead of +1
+      value = -1;
+
+      // return;
     }
 
-    const updatedVotes = song[votes] + 1;
+    const updatedVotes = song[votes] + value;
 
     fetch('http://localhost:8000/queue/' + song.id, {
       method: 'PATCH',
@@ -75,22 +81,26 @@ function App() {
       body: JSON.stringify({
         [votes]: updatedVotes,
       }),
-    })
-      .then((res) => res.json())
-      .then((json) => console.table('json from db.json', json));
+    }).then((res) => res.json());
+    // .then((json) => console.table('json from db.json', json));
 
     // update gui for upVotes
     queue.forEach((q) => {
       if (q.id === song.id) {
-        q[votes] += 1;
+        q[votes] += value;
         setQueue([...queue]);
       }
     });
 
-    // register user up vote
-    userUpVoted += ' ' + song.id;
-    localStorage.setItem('userUpVoted', userUpVoted);
-    console.log('user up voted:', userUpVoted);
+    if (value === 1) {
+      // register user up vote
+      userUpVotedArray.push(song.id);
+      localStorage.setItem('userUpVoted', JSON.stringify(userUpVotedArray));
+    } else if (value === -1) {
+      // unregister/remove up vote from local storage
+      userUpVotedArray.splice(userUpVotedArray.indexOf(song.id));
+      localStorage.setItem('userUpVoted', JSON.stringify(userUpVotedArray));
+    }
   };
 
   const addToQueue = (songTitle, artistName, mbid, albumArt, event) => {
