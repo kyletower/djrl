@@ -5,7 +5,6 @@ import App from './App';
 
 ReactDOM.render(
   <React.StrictMode>
-    <p>DJ Requests! [From index.js]</p>
     <App />
   </React.StrictMode>,
   document.getElementById('root')

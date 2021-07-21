@@ -229,7 +229,6 @@ function App() {
           />
         )}
       </div>
-      <p>end of div in app.js</p>
     </div>
   );
 }
