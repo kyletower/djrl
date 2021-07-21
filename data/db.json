@@ -3,7 +3,7 @@
     {
       "songTitle": "Stupid Deep",
       "artistName": "Jon Bellion",
-      "upVotes": 35,
+      "upVotes": 36,
       "downVotes": 20,
       "id": 8
     },
@@ -102,22 +102,50 @@
       "id": 42
     },
     {
-      "songTitle": "Help My Unbelief",
-      "artistName": "Red Mountain Church",
+      "songTitle": "Mansion",
+      "artistName": "NF",
       "upVotes": 1,
       "downVotes": 0,
-      "mbid": "6679bacf-b66d-49ae-8b90-453bb4190f31",
+      "mbid": "",
+      "albumArt": "https://lastfm.freetls.fastly.net/i/u/34s/819f5dabf039ff2f6e8a11f9b4ac4ae0.jpg",
       "userId": "1626726645387",
       "id": 43
     },
     {
-      "songTitle": "Good Riddance (Time of Your Life)",
-      "artistName": "Green Day",
-      "upVotes": 2,
+      "songTitle": "Intro 2 (NF/Therapy Session)",
+      "artistName": "NF",
+      "upVotes": 1,
       "downVotes": 0,
-      "mbid": "025161a4-d925-45c9-a2aa-f34d1dcebbf7",
+      "mbid": "",
       "userId": "1626726645387",
       "id": 44
+    },
+    {
+      "songTitle": "Mmmbop",
+      "artistName": "Hanson",
+      "upVotes": 1,
+      "downVotes": 0,
+      "mbid": "1e3c035f-c2c4-4d37-892b-9ba994b111e9",
+      "userId": "1626726645387",
+      "id": 45
+    },
+    {
+      "songTitle": "Get Low",
+      "artistName": "Lil Jon & The East Side Boyz",
+      "upVotes": 1,
+      "downVotes": 0,
+      "mbid": "5b219856-bf36-42e0-89d8-fe812c653866",
+      "userId": "1626726645387",
+      "id": 46
+    },
+    {
+      "songTitle": "Everybody (Backstreet's Back)",
+      "artistName": "Backstreet Boys",
+      "upVotes": 0,
+      "downVotes": 0,
+      "mbid": "80e35a13-9d86-4543-8446-a687e7ec6408",
+      "userId": "1626726645387",
+      "id": 47
     }
   ],
   "played": []

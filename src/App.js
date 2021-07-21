@@ -10,6 +10,7 @@ export const sortByVotes = 'sortByVotes';
 export const userId =
   localStorage.getItem('userId') || localStorage.setItem('userId', Date.now());
 
+let userUpVotedArray = [];
 let userUpVoted =
   localStorage.getItem('userUpVoted') ||
   localStorage.setItem('userUpVoted', JSON.stringify([]));
@@ -62,7 +63,7 @@ function App() {
   // vote will be the attribute upVotes or downVotes
   const updateVotes = (song, votes) => {
     let value = 1;
-    let userUpVotedArray = JSON.parse(localStorage.getItem('userUpVoted'));
+    userUpVotedArray = JSON.parse(localStorage.getItem('userUpVoted'));
 
     if (userUpVotedArray.includes(song.id)) {
       console.log(`you've already up voted that song, removing your vote`);
@@ -149,6 +150,15 @@ function App() {
     })
       .then((res) => res.json())
       .then((data) => {
+        // console.log('data.id', data.id);
+
+        // register vote
+        userUpVotedArray.push(data.id);
+        localStorage.setItem('userUpVoted', JSON.stringify(userUpVotedArray));
+        console.log(
+          'local st:',
+          JSON.parse(localStorage.getItem('userUpVoted'))
+        );
         setQueue([data, ...queue]);
       });
 

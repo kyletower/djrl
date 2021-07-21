@@ -21,7 +21,7 @@ const SearchResults = ({ searchResults, addToQueue }) => {
         .then((data) => {
           if (data?.track?.album?.image[0]?.['#text']) {
             const url = data.track.album.image[0]['#text'];
-            console.log({ url });
+            // console.log({ url });
             setImages((state) => ({ ...state, [i]: url }));
           }
         })
@@ -30,7 +30,7 @@ const SearchResults = ({ searchResults, addToQueue }) => {
         });
     });
   }, [searchResults]);
-  console.log({ images });
+  // console.log({ images });
   return (
     <>
       <h3>Results</h3>
