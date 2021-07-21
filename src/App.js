@@ -70,12 +70,11 @@ function App() {
 
       // change value to -1 instead of +1
       value = -1;
-
-      // return;
     }
 
     const updatedVotes = song[votes] + value;
 
+    // patch
     fetch('http://localhost:8000/queue/' + song.id, {
       method: 'PATCH',
       headers: { 'Content-Type': 'application/json' },
@@ -93,17 +92,19 @@ function App() {
       }
     });
 
+    // register or unregister up vote
     if (value === 1) {
       // register user up vote
       userUpVotedArray.push(song.id);
       localStorage.setItem('userUpVoted', JSON.stringify(userUpVotedArray));
     } else if (value === -1) {
-      // unregister/remove up vote from local storage
+      // unregister up vote from local storage
       userUpVotedArray.splice(userUpVotedArray.indexOf(song.id));
       localStorage.setItem('userUpVoted', JSON.stringify(userUpVotedArray));
     }
   };
 
+  // add the search request song to the queue
   const addToQueue = (songTitle, artistName, mbid, albumArt, event) => {
     // create newSong object with 1 upVotes
     const newSong = {
@@ -121,24 +122,23 @@ function App() {
     // array.filter((item, index) => array.indexOf(item) === index);
     // array = [... new Set(array)]
     queue.forEach((request) => {
+      // if newSong has laready been requested then don't add it, just up vote it
       if (
         newSong.songTitle === request.songTitle &&
         newSong.artistName === request.artistName
       ) {
         duplicate = true;
-        console.log(
-          'this song has already been requested',
-          request.upVotes,
-          'times'
-        );
         updateVotes(request, 'upVotes');
         return; // why doesn't this exit the addToQueue function?, it only exits the .forEach?
       }
     });
 
+    // update gui to a checkmark even if it's a duplicate for user feedback
     if (duplicate) {
       // change color to green and switch + to ✅ when added
-      event.target.parentElement.classList.add('added-to-queue');
+      event.target.parentElement.previousSibling.classList.add(
+        'added-to-queue'
+      );
       event.target.innerText = '✅';
       return;
     }
@@ -150,20 +150,15 @@ function App() {
     })
       .then((res) => res.json())
       .then((data) => {
-        // console.log('data.id', data.id);
-
         // register vote
         userUpVotedArray.push(data.id);
         localStorage.setItem('userUpVoted', JSON.stringify(userUpVotedArray));
-        console.log(
-          'local st:',
-          JSON.parse(localStorage.getItem('userUpVoted'))
-        );
+
         setQueue([data, ...queue]);
       });
 
     // change color to green and switch + to ✅ when added
-    event.target.parentElement.classList.add('added-to-queue');
+    event.target.parentElement.previousSibling.classList.add('added-to-queue');
     event.target.innerText = '✅';
     console.log(event);
   };

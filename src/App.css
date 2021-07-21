@@ -18,10 +18,6 @@
   color: white;
 }
 
-.added-to-queue {
-  color: green;
-}
-
 p {
   line-height: 0px;
   text-align: left;
@@ -90,4 +86,8 @@ button:hover {
   align-self: center;
   text-align: right;
   /* justify-self: flex-end; */
+}
+
+.added-to-queue {
+  color: #1f4788;
 }
