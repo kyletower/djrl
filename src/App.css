@@ -79,6 +79,14 @@ button:hover {
   font-size: calc(6px + 1vmin);
 }
 
+.vote {
+  display: flex;
+}
+
+.vote button {
+  flex-direction: column;
+}
+
 .add-to-queue {
   /* display: block; */
   /* width: 100%; */

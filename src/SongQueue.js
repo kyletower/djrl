@@ -62,8 +62,8 @@ const SongQueue = ({
             </div>
             <div className='vote'>
               <button onClick={() => upVote(song)}>{song.upVotes}👍</button>
-              <button onClick={() => downVote(song)}>{song.downVotes}👎</button>
               <button onClick={() => markAsPlayed(song.id)}>▶️</button>
+              <button onClick={() => downVote(song)}>{song.downVotes}👎</button>
             </div>
           </div>
         ))}
