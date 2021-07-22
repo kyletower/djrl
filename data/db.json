@@ -3,8 +3,8 @@
     {
       "songTitle": "Stupid Deep",
       "artistName": "Jon Bellion",
-      "upVotes": 44,
-      "downVotes": 27,
+      "upVotes": 46,
+      "downVotes": 28,
       "id": 8
     },
     {
@@ -25,8 +25,8 @@
     {
       "songTitle": "Good Things Fall Apart (with Jon Bellion)",
       "artistName": "Illenium",
-      "upVotes": 6,
-      "downVotes": 1,
+      "upVotes": 7,
+      "downVotes": 0,
       "mbid": "",
       "userId": "1626726645387",
       "id": 34
@@ -34,7 +34,7 @@
     {
       "songTitle": "All Time Low",
       "artistName": "Jon Bellion",
-      "upVotes": 2,
+      "upVotes": 3,
       "downVotes": 0,
       "mbid": "",
       "albumArt": "https://lastfm.freetls.fastly.net/i/u/34s/bf8ec059d42aa299906032caabec36fb.png",
@@ -54,7 +54,7 @@
     {
       "songTitle": "Love The Way You Lie",
       "artistName": "Eminem",
-      "upVotes": 1,
+      "upVotes": 2,
       "downVotes": 0,
       "mbid": "",
       "albumArt": "https://lastfm.freetls.fastly.net/i/u/34s/d15881b09b6041ccad34c2490de618b3.png",
@@ -134,7 +134,7 @@
     {
       "songTitle": "Chin Up",
       "artistName": "Copeland",
-      "upVotes": 2,
+      "upVotes": 3,
       "downVotes": 0,
       "mbid": "67f6f947-abfd-4d46-aecb-3933e0916ca6",
       "albumArt": "https://lastfm.freetls.fastly.net/i/u/34s/788ce269bc49baad1601e8b1e13fd744.jpg",

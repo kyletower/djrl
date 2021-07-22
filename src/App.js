@@ -66,36 +66,48 @@ function App() {
   };
 
   const upVote = (song) => {
-    let value = 1;
     userUpVotedArray = JSON.parse(localStorage.getItem('userUpVoted'));
 
-    if (userUpVotedArray.includes(song.id)) {
-      console.log(`you've already up voted that song, removing your vote`);
-      // change value to -1 instead of +1
-      value = -1;
+    // register or deregister up vote
+    if (!userUpVotedArray.includes(song.id)) {
+      registerUpVote(song);
+    } else {
+      // deregister up vote from local storage
+      deregisterUpVote(song);
     }
+  };
 
-    // register or unregister up vote
-    if (value === 1) {
-      // register user up vote
-      userUpVotedArray.push(song.id);
-      localStorage.setItem('userUpVoted', JSON.stringify(userUpVotedArray));
+  const registerUpVote = (song) => {
+    // register user up vote
+    userUpVotedArray.push(song.id);
+    localStorage.setItem('userUpVoted', JSON.stringify(userUpVotedArray));
+    updateVotes(song, 'upVotes', 1);
 
-      if (userDownVotedArray.includes(song.id)) {
-        userDownVotedArray.splice(userDownVotedArray.indexOf(song.id));
-        localStorage.setItem(
-          'userDownVoted',
-          JSON.stringify(userDownVotedArray)
-        );
-        updateVotes(song, 'downVotes', -1);
-      }
-    } else if (value === -1) {
-      // unregister up vote from local storage
-      userUpVotedArray.splice(userUpVotedArray.indexOf(song.id));
-      localStorage.setItem('userUpVoted', JSON.stringify(userUpVotedArray));
+    if (userDownVotedArray.includes(song.id)) {
+      deregisterDownVote(song);
     }
+  };
 
-    updateVotes(song, 'upVotes', value);
+  const registerDownVote = (song) => {
+    userDownVotedArray.push(song.id);
+    localStorage.setItem('userDownVoted', JSON.stringify(userDownVotedArray));
+    updateVotes(song, 'downVotes', 1);
+  };
+
+  const deregisterUpVote = (song) => {
+    // deregisterUpVote
+    userUpVotedArray.splice(userUpVotedArray.indexOf(song.id));
+    localStorage.setItem('userUpVoted', JSON.stringify(userUpVotedArray));
+    // exclude
+    updateVotes(song, 'upVotes', -1);
+  };
+
+  const deregisterDownVote = (song) => {
+    // deregisterUserDownVote
+    userDownVotedArray.splice(userDownVotedArray.indexOf(song.id));
+    localStorage.setItem('userDownVoted', JSON.stringify(userDownVotedArray));
+    // exclude
+    updateVotes(song, 'downVotes', -1);
   };
 
   const downVote = (song) => {
@@ -108,24 +120,19 @@ function App() {
       value = -1;
     }
 
-    // register or unregister down vote
+    // register or deregister down vote
     if (value === 1) {
-      // register user down vote
-      userDownVotedArray.push(song.id);
-      localStorage.setItem('userDownVoted', JSON.stringify(userDownVotedArray));
+      // register user down vote, registerUserDownVote
+      registerDownVote(song);
 
       if (userUpVotedArray.includes(song.id)) {
-        userUpVotedArray.splice(userUpVotedArray.indexOf(song.id));
-        localStorage.setItem('userUpVoted', JSON.stringify(userUpVotedArray));
-        updateVotes(song, 'upVotes', -1);
+        // deregister user up vote, deregisterUserUpVote
+        deregisterUpVote(song);
       }
     } else if (value === -1) {
-      // unregister down vote from local storage
-      userDownVotedArray.splice(userDownVotedArray.indexOf(song.id));
-      localStorage.setItem('userDownVoted', JSON.stringify(userDownVotedArray));
+      // deregister user down vote, deregisterUserDownVote
+      deregisterDownVote(song);
     }
-
-    updateVotes(song, 'downVotes', value);
   };
 
   // vote will be the attribute upVotes or downVotes
