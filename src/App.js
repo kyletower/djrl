@@ -6,18 +6,27 @@ import { useState, useEffect } from 'react';
 
 export const sortByTime = 'sortByTime';
 export const sortByVotes = 'sortByVotes';
-export const userId =
-  localStorage.getItem('userId') || localStorage.setItem('userId', Date.now());
+
+let userId = localStorage.getItem('userId');
+if (!userId) {
+  localStorage.setItem('userId', Date.now());
+  userId = localStorage.getItem('userId');
+}
+export { userId };
 
 let userUpVotedArray = [];
-let userUpVoted =
-  localStorage.getItem('userUpVoted') ||
+let userUpVoted = localStorage.getItem('userUpVoted');
+if (!userUpVoted) {
   localStorage.setItem('userUpVoted', JSON.stringify([]));
+  userUpVoted = localStorage.getItem('userUpVoted');
+}
 
 let userDownVotedArray = [];
-let userDownVoted =
-  localStorage.getItem('userDownVoted') ||
+let userDownVoted = localStorage.getItem('userDownVoted');
+if (!userDownVoted) {
   localStorage.setItem('userDownVoted', JSON.stringify([]));
+  userDownVoted = localStorage.getItem('userDownVoted');
+}
 
 function App() {
   // initial render
@@ -72,13 +81,14 @@ function App() {
       userUpVotedArray.push(song.id);
       localStorage.setItem('userUpVoted', JSON.stringify(userUpVotedArray));
 
-      // if (userDownVotedArray.includes(song.id)) {
-      //   userDownVotedArray.splice(userDownVotedArray.indexOf(song.id));
-      //   localStorage.setItem(
-      //     'userDownVoted',
-      //     JSON.stringify(userDownVotedArray)
-      //   );
-      // }
+      if (userDownVotedArray.includes(song.id)) {
+        userDownVotedArray.splice(userDownVotedArray.indexOf(song.id));
+        localStorage.setItem(
+          'userDownVoted',
+          JSON.stringify(userDownVotedArray)
+        );
+        updateVotes(song, 'downVotes', -1);
+      }
     } else if (value === -1) {
       // unregister up vote from local storage
       userUpVotedArray.splice(userUpVotedArray.indexOf(song.id));
@@ -104,10 +114,11 @@ function App() {
       userDownVotedArray.push(song.id);
       localStorage.setItem('userDownVoted', JSON.stringify(userDownVotedArray));
 
-      // if (userUpVotedArray.includes(song.id)) {
-      //   userUpVotedArray.splice(userUpVotedArray.indexOf(song.id));
-      //   localStorage.setItem('userUpVoted', JSON.stringify(userUpVotedArray));
-      // }
+      if (userUpVotedArray.includes(song.id)) {
+        userUpVotedArray.splice(userUpVotedArray.indexOf(song.id));
+        localStorage.setItem('userUpVoted', JSON.stringify(userUpVotedArray));
+        updateVotes(song, 'upVotes', -1);
+      }
     } else if (value === -1) {
       // unregister down vote from local storage
       userDownVotedArray.splice(userDownVotedArray.indexOf(song.id));

@@ -3,8 +3,8 @@
     {
       "songTitle": "Stupid Deep",
       "artistName": "Jon Bellion",
-      "upVotes": 43,
-      "downVotes": 26,
+      "upVotes": 44,
+      "downVotes": 27,
       "id": 8
     },
     {
@@ -17,7 +17,7 @@
     {
       "songTitle": "The Adventure",
       "artistName": "Angels & Airwaves",
-      "upVotes": 10,
+      "upVotes": 11,
       "downVotes": 2,
       "userId": "1626726645387",
       "id": 24
@@ -190,6 +190,16 @@
       "albumArt": "https://lastfm.freetls.fastly.net/i/u/34s/d1b3b8bda251e48b5e0715a53931a798.jpg",
       "userId": "1626726645387",
       "id": 62
+    },
+    {
+      "songTitle": "The Search - Edit",
+      "artistName": "NF",
+      "upVotes": 1,
+      "downVotes": 0,
+      "mbid": "",
+      "albumArt": "https://lastfm.freetls.fastly.net/i/u/34s/18cccae9d6cf264218e955604765b269.jpg",
+      "userId": "1626726645387",
+      "id": 63
     }
   ],
   "played": []
