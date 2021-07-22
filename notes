@@ -9,6 +9,8 @@ http://localhost:8000/queue?_sort=upVotes&_order=desc
 
 =====
 TO DO
+- delete home.js
+- simplify up/down voting logic to restrict to 1 or other or neither, but not both
 - style from flexbox to grid
 - list all parties
 - create a party
@@ -21,9 +23,10 @@ updated to reflect that change.
 KNOWN ISSUES
 code:
 - green check mark remains after searching for another song
-- clicking green checkmark after adding song produces NaN for up vote counter
-- album cover art flickers before settling
 - old album cover art remains after new search
+- font doesn't return to white
+- album cover art flickers before settling
+- warnings in console
 
 style: 
 - text overlapping for longer song names

@@ -160,6 +160,36 @@
       "albumArt": "https://lastfm.freetls.fastly.net/i/u/34s/46366a857ac26bf8f20904262c2079d0.jpg",
       "userId": "1626726645387",
       "id": 59
+    },
+    {
+      "songTitle": "Light",
+      "artistName": "San Holo",
+      "upVotes": 1,
+      "downVotes": 0,
+      "mbid": "",
+      "albumArt": "https://lastfm.freetls.fastly.net/i/u/34s/b518410e66d83369ba6c90d265ef0ca3.jpg",
+      "userId": "1626726645387",
+      "id": 60
+    },
+    {
+      "songTitle": "We Rise",
+      "artistName": "San Holo",
+      "upVotes": 1,
+      "downVotes": 0,
+      "mbid": "",
+      "albumArt": "https://lastfm.freetls.fastly.net/i/u/34s/d6d4969649c749a3c9bc9f738feaf71f.jpg",
+      "userId": "1626726645387",
+      "id": 61
+    },
+    {
+      "songTitle": "Stargazing",
+      "artistName": "Travi$ Scott",
+      "upVotes": 1,
+      "downVotes": 0,
+      "mbid": "",
+      "albumArt": "https://lastfm.freetls.fastly.net/i/u/34s/d1b3b8bda251e48b5e0715a53931a798.jpg",
+      "userId": "1626726645387",
+      "id": 62
     }
   ],
   "played": []
