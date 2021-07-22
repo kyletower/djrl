@@ -9,10 +9,11 @@ http://localhost:8000/queue?_sort=upVotes&_order=desc
 
 =====
 TO DO
-- style
+- style from flexbox to grid
 - list all parties
 - create a party
 - join a party
+- only admin can 'mark as played' / remove from queue
 - when there is a change to the queue (song is added, votes are changed), all clients should be 
 updated to reflect that change.
 
