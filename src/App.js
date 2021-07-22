@@ -77,8 +77,18 @@ function App() {
     }
   };
 
+  const downVote = (song) => {
+    userDownVotedArray = JSON.parse(localStorage.getItem('userDownVoted'));
+
+    // register or deregister down vote
+    if (!userDownVotedArray.includes(song.id)) {
+      registerDownVote(song);
+    } else {
+      deregisterDownVote(song);
+    }
+  };
+
   const registerUpVote = (song) => {
-    // register user up vote
     userUpVotedArray.push(song.id);
     localStorage.setItem('userUpVoted', JSON.stringify(userUpVotedArray));
     updateVotes(song, 'upVotes', 1);
@@ -92,47 +102,22 @@ function App() {
     userDownVotedArray.push(song.id);
     localStorage.setItem('userDownVoted', JSON.stringify(userDownVotedArray));
     updateVotes(song, 'downVotes', 1);
+
+    if (userUpVotedArray.includes(song.id)) {
+      deregisterUpVote(song);
+    }
   };
 
   const deregisterUpVote = (song) => {
-    // deregisterUpVote
     userUpVotedArray.splice(userUpVotedArray.indexOf(song.id));
     localStorage.setItem('userUpVoted', JSON.stringify(userUpVotedArray));
-    // exclude
     updateVotes(song, 'upVotes', -1);
   };
 
   const deregisterDownVote = (song) => {
-    // deregisterUserDownVote
     userDownVotedArray.splice(userDownVotedArray.indexOf(song.id));
     localStorage.setItem('userDownVoted', JSON.stringify(userDownVotedArray));
-    // exclude
     updateVotes(song, 'downVotes', -1);
-  };
-
-  const downVote = (song) => {
-    let value = 1;
-    userDownVotedArray = JSON.parse(localStorage.getItem('userDownVoted'));
-
-    if (userDownVotedArray.includes(song.id)) {
-      console.log(`you've already up down voted that song, removing your vote`);
-      // change value to -1 instead of +1
-      value = -1;
-    }
-
-    // register or deregister down vote
-    if (value === 1) {
-      // register user down vote, registerUserDownVote
-      registerDownVote(song);
-
-      if (userUpVotedArray.includes(song.id)) {
-        // deregister user up vote, deregisterUserUpVote
-        deregisterUpVote(song);
-      }
-    } else if (value === -1) {
-      // deregister user down vote, deregisterUserDownVote
-      deregisterDownVote(song);
-    }
   };
 
   // vote will be the attribute upVotes or downVotes
