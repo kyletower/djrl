@@ -36,6 +36,17 @@ img {
 }
 
 /* ========== END OF RESET ========== */
+button {
+  background: none;
+  border: 0.5rem solid white;
+  border: ;
+  transition: all 0.2s ease-in-out;
+  padding: 2px;
+  font-size: 2rem;
+  color: white;
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
 
 .App {
   min-height: 100vh;
@@ -56,8 +67,8 @@ img {
 .search-result,
 .queue-item {
   display: grid;
-  grid-template-columns: 1fr 5fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: auto 5fr auto;
+  /* grid-template-rows: auto auto; */
   margin: 1rem;
   padding: 1rem;
   grid-auto-flow: column;
@@ -68,7 +79,7 @@ img {
 .album-art {
   grid-row-start: span 2;
   grid-column-start: span 1;
-  /* align-content: center; */
+  /* align-self: center; */
   /* padding: 0 0 0 0.5rem; */
   border: 2px solid goldenrod;
 }
@@ -98,22 +109,21 @@ img {
 
 .vote {
   grid-row-start: span 2;
+  /* justify-content: right; */
+  justify-self: right;
+  /* justify-items: right; */
 }
 
 .vote button {
   display: block;
-  font-size: 0.5rem;
+  border: none;
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
 }
 
 .vote button .emoji {
   font-size: 2rem;
-}
-
-button {
-  background: none;
-  border: none;
-  transition: all 0.2s ease-in-out;
-  padding: 2px;
 }
 
 button:hover {

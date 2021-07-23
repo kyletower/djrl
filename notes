@@ -9,6 +9,7 @@ http://localhost:8000/queue?_sort=upVotes&_order=desc
 
 =====
 TO DO
+- simplify / refactor SongQueue.js
 - style from flexbox to grid
 - list all parties
 - create a party
