@@ -1,7 +1,7 @@
 /* ========== CSS RESET ========== */
 html {
   box-sizing: border-box;
-  font-size: 16px;
+  font-size: 10px;
 }
 
 *,
@@ -40,61 +40,47 @@ img {
 .App {
   min-height: 100vh;
   background-color: #282c34;
-}
-
-.app-container {
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* justify-content: center; */
-  /* border: 10px solid goldenrod; */
-
-  /* height: 100%; */
-  /* width: 100%; */
-  /* align-items: center; */
-  font-size: calc(8px + 1vmin);
+  font-size: calc(1rem + 1vmin);
   color: white;
 }
 
-p {
-  padding: 0;
-  margin: 0;
-  text-align: left;
+.app-container {
+  display: flex;
+  /* switch main axis to vertical axis */
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  /* border: 10px solid goldenrod; */
 }
 
 .search-result,
 .queue-item {
   display: grid;
-  padding: 10px;
+  /* padding: 40px; */
   /* border: 10px solid goldenrod; */
-  grid-template-columns: 1fr;
-  margin: 10px;
-  padding: 5px;
+  grid-template-columns: 1fr 5fr 1fr;
+  margin: 1rem;
+  padding: 1rem;
   grid-auto-flow: column;
   /* width: 50%; */
-  border-radius: 5px;
+  border-radius: 0.5rem;
   background-color: rgb(197, 81, 129);
 }
 
 .album-art {
-  /* flex-basis: 50px; */
-  /* width: 50px; */
-  /* border: 1px solid pink; */
-  align-self: center;
-  padding: 5px;
-  /* flex: 1 1 35px; */
+  /* align-self: center; */
+  /* padding: 0 0 0 0.5rem; */
+  /* border: 2px solid goldenrod; */
 }
 
 .song-info {
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* display: block; */
+  display: flex;
+  flex-direction: column;
   /* flex: 5; */
-  flex-wrap: wrap;
   /* width: 100%; */
-  /* flex-direction: column; */
-  margin: 5px;
-  padding: 2px;
-  /* border: 1px solid red; */
+  /* margin: 5px; */
+  /* padding: 2px; */
+  border: 1px solid red;
 }
 
 .song-name {
