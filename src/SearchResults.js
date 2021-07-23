@@ -60,7 +60,7 @@ const SearchResults = ({ searchResults, addToQueue }) => {
                   addToQueue(name, artist, mbid, images[i], event)
                 }
               >
-                ➕
+                <span className='emoji'>➕</span>
               </button>
             </div>
           </div>

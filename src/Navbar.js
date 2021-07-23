@@ -3,8 +3,8 @@ const Navbar = ({ showHideSearch, showHideQueue }) => {
     <nav className='navbar'>
       <h1>DJRL | Play That!</h1>
       <div className='links'>
-        <button onClick={() => showHideSearch()}>Show/Hide Search</button>
-        <button onClick={() => showHideQueue()}>Show/Hide Queue</button>
+        <button onClick={() => showHideSearch()}>🔎</button>
+        <button onClick={() => showHideQueue()}>🎶</button>
       </div>
     </nav>
   );

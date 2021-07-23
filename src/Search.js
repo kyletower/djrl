@@ -70,7 +70,7 @@ const Search = ({ addToQueue }) => {
       <h2>Search</h2>
       <input
         type='text'
-        placeholder='Type the title of a song and/or an artist...'
+        placeholder='🔎Type the title of a song and/or an artist...'
         autoFocus
         size='70'
         onChange={processChange}
