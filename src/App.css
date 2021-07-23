@@ -56,26 +56,27 @@ img {
 .search-result,
 .queue-item {
   display: grid;
-  /* padding: 40px; */
-  /* border: 10px solid goldenrod; */
   grid-template-columns: 1fr 5fr 1fr;
+  grid-template-rows: 1fr 1fr;
   margin: 1rem;
   padding: 1rem;
   grid-auto-flow: column;
-  /* width: 50%; */
   border-radius: 0.5rem;
   background-color: rgb(197, 81, 129);
 }
 
 .album-art {
+  grid-row-start: span 1;
+  grid-column-start: span 1;
   /* align-self: center; */
   /* padding: 0 0 0 0.5rem; */
-  /* border: 2px solid goldenrod; */
+  border: 2px solid goldenrod;
 }
 
 .song-info {
-  display: flex;
-  flex-direction: column;
+  grid-row-start: span 2;
+  /* display: flex; */
+  /* flex-direction: column; */
   /* flex: 5; */
   /* width: 100%; */
   /* margin: 5px; */
@@ -84,22 +85,23 @@ img {
 }
 
 .song-name {
+  grid-row-start: span 1;
   font-weight: bold;
-  flex-wrap: wrap;
   /* font-stretch: ultra-expanded; */
   /* width: 10em; */
 }
 
 .artist-name {
+  grid-row-start: span 1;
   font-size: calc(6px + 1vmin);
 }
 
 .vote {
-  display: flex;
+  grid-row-start: span 2;
 }
 
 .vote button {
-  flex-direction: row;
+  display: block;
 }
 
 button {
