@@ -9,7 +9,6 @@ http://localhost:8000/queue?_sort=upVotes&_order=desc
 
 =====
 TO DO
-- simplify / refactor SongQueue.js
 - style from flexbox to grid
 - list all parties
 - create a party
@@ -17,6 +16,9 @@ TO DO
 - only admin can 'mark as played' / remove from queue
 - when there is a change to the queue (song is added, votes are changed), all clients should be 
 updated to reflect that change. (use websockets with my own express server, socket io)
+Spotify, websockets, 
+Already in party ? showQueue : joinParty
+
 
 ======
 KNOWN ISSUES

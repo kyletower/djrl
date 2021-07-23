@@ -42,8 +42,6 @@ function App() {
   const [queue, setQueue] = useState([]);
   const [showSearch, setShowSearch] = useState(true);
   const [showQueue, setShowQueue] = useState(true);
-  const [sortOrder, setSortOrder] = useState(sortByVotes);
-  const [onlyMyRequests, setOnlyMyRequests] = useState(false);
 
   const showHideSearch = () => {
     setShowSearch(!showSearch);
@@ -65,6 +63,7 @@ function App() {
       });
   };
 
+  // all voting logic can be inside of SearchResults or DisplaySongs.js
   const upVote = (song) => {
     userUpVotedArray = JSON.parse(localStorage.getItem('userUpVoted'));
 
@@ -228,10 +227,6 @@ function App() {
         <div className='queue-container'>
           {showQueue && queue && (
             <SongQueue
-              // sortOrder={sortOrder}
-              // setSortOrder={setSortOrder}
-              // onlyMyRequests={onlyMyRequests}
-              // setOnlyMyRequests={setOnlyMyRequests}
               queue={queue}
               upVote={upVote}
               downVote={downVote}

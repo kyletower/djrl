@@ -6,16 +6,7 @@ import { userId } from './App';
 import DisplaySongs from './DisplaySongs';
 import { useState } from 'react';
 
-const SongQueue = ({
-  // sortOrder,
-  // setSortOrder,
-  // onlyMyRequests,
-  // setOnlyMyRequests,
-  queue,
-  upVote,
-  downVote,
-  markAsPlayed,
-}) => {
+const SongQueue = ({ queue, upVote, downVote, markAsPlayed }) => {
   const [sortOrder, setSortOrder] = useState(sortByVotes);
   const [onlyMyRequests, setOnlyMyRequests] = useState(false);
 

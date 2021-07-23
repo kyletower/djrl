@@ -21,9 +21,9 @@ const DisplaySongs = ({ songsToDisplay, upVote, downVote, markAsPlayed }) => {
             {song.upVotes}
             <span className='emoji'>👍</span>
           </button>
-          <button onClick={() => markAsPlayed(song.id)}>
+          {/* <button onClick={() => markAsPlayed(song.id)}>
             <span className='emoji'>▶️</span>
-          </button>
+          </button> */}
           <button onClick={() => downVote(song)}>
             {song.downVotes}
             <span className='emoji'>👎</span>
