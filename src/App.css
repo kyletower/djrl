@@ -1,19 +1,56 @@
-/* flex container 100vh */
-.App {
-  /* text-align: center; */
-  min-width: 100vw;
-  min-height: 100vh;
+/* ========== CSS RESET ========== */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
 }
 
-.flex-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  /* border: 10px solid goldenrod; */
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ========== END OF RESET ========== */
+
+.App {
+  min-height: 100vh;
   background-color: #282c34;
+}
+
+.app-container {
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: center; */
+  /* border: 10px solid goldenrod; */
+
   /* height: 100%; */
-  width: 100%;
-  align-items: center;
+  /* width: 100%; */
+  /* align-items: center; */
   font-size: calc(8px + 1vmin);
   color: white;
 }
@@ -26,24 +63,16 @@ p {
 
 .search-result,
 .queue-item {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  padding: 10px;
   /* border: 10px solid goldenrod; */
+  grid-template-columns: 1fr;
   margin: 10px;
   padding: 5px;
-  width: 50%;
+  grid-auto-flow: column;
+  /* width: 50%; */
   border-radius: 5px;
   background-color: rgb(197, 81, 129);
-}
-
-button {
-  transition: all 0.2s ease-in-out;
-  padding: 2px;
-}
-
-button:hover {
-  /* background-color: yellow; */
-  transform: scale(1.1);
 }
 
 .album-art {
@@ -51,7 +80,7 @@ button:hover {
   /* width: 50px; */
   /* border: 1px solid pink; */
   align-self: center;
-  padding: 10px;
+  padding: 5px;
   /* flex: 1 1 35px; */
 }
 
@@ -61,7 +90,7 @@ button:hover {
   /* display: block; */
   /* flex: 5; */
   flex-wrap: wrap;
-  width: 100%;
+  /* width: 100%; */
   /* flex-direction: column; */
   margin: 5px;
   padding: 2px;
@@ -84,7 +113,17 @@ button:hover {
 }
 
 .vote button {
-  flex-direction: column;
+  flex-direction: row;
+}
+
+button {
+  transition: all 0.2s ease-in-out;
+  padding: 2px;
+}
+
+button:hover {
+  /* background-color: yellow; */
+  transform: scale(1.1);
 }
 
 .add-to-queue {

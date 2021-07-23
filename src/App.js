@@ -215,22 +215,30 @@ function App() {
 
   return (
     <div className='App'>
-      <div className='flex-container'>
-        <Navbar showHideSearch={showHideSearch} showHideQueue={showHideQueue} />
-
-        {showSearch && <Search addToQueue={addToQueue} />}
-        {showQueue && queue && (
-          <SongQueue
-            sortOrder={sortOrder}
-            setSortOrder={setSortOrder}
-            onlyMyRequests={onlyMyRequests}
-            setOnlyMyRequests={setOnlyMyRequests}
-            queue={queue}
-            upVote={upVote}
-            downVote={downVote}
-            markAsPlayed={markAsPlayed}
+      <div className='app-container'>
+        <div className='view-options-container'>
+          <Navbar
+            showHideSearch={showHideSearch}
+            showHideQueue={showHideQueue}
           />
-        )}
+        </div>
+        <div className='search-container'>
+          {showSearch && <Search addToQueue={addToQueue} />}
+        </div>
+        <div className='queue-container'>
+          {showQueue && queue && (
+            <SongQueue
+              sortOrder={sortOrder}
+              setSortOrder={setSortOrder}
+              onlyMyRequests={onlyMyRequests}
+              setOnlyMyRequests={setOnlyMyRequests}
+              queue={queue}
+              upVote={upVote}
+              downVote={downVote}
+              markAsPlayed={markAsPlayed}
+            />
+          )}
+        </div>
       </div>
     </div>
   );
