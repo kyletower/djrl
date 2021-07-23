@@ -54,7 +54,7 @@ function App() {
   };
 
   const loadQueue = () => {
-    console.log({ onlyMyRequests });
+    // console.log({ onlyMyRequests });
     fetch('http://localhost:8000/queue')
       .then((res) => {
         return res.json();
@@ -228,10 +228,10 @@ function App() {
         <div className='queue-container'>
           {showQueue && queue && (
             <SongQueue
-              sortOrder={sortOrder}
-              setSortOrder={setSortOrder}
-              onlyMyRequests={onlyMyRequests}
-              setOnlyMyRequests={setOnlyMyRequests}
+              // sortOrder={sortOrder}
+              // setSortOrder={setSortOrder}
+              // onlyMyRequests={onlyMyRequests}
+              // setOnlyMyRequests={setOnlyMyRequests}
               queue={queue}
               upVote={upVote}
               downVote={downVote}
