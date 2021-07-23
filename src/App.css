@@ -66,9 +66,9 @@ img {
 }
 
 .album-art {
-  grid-row-start: span 1;
+  grid-row-start: span 2;
   grid-column-start: span 1;
-  /* align-self: center; */
+  /* align-content: center; */
   /* padding: 0 0 0 0.5rem; */
   border: 2px solid goldenrod;
 }
@@ -93,7 +93,7 @@ img {
 
 .artist-name {
   grid-row-start: span 1;
-  font-size: calc(6px + 1vmin);
+  font-size: calc(0.5rem + 1vmin);
 }
 
 .vote {
@@ -102,9 +102,16 @@ img {
 
 .vote button {
   display: block;
+  font-size: 0.5rem;
+}
+
+.vote button .emoji {
+  font-size: 2rem;
 }
 
 button {
+  background: none;
+  border: none;
   transition: all 0.2s ease-in-out;
   padding: 2px;
 }

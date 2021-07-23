@@ -61,9 +61,17 @@ const SongQueue = ({
               <p className='artist-name'>{song.artistName}</p>
             </div>
             <div className='vote'>
-              <button onClick={() => upVote(song)}>{song.upVotes}👍</button>
-              <button onClick={() => markAsPlayed(song.id)}>▶️</button>
-              <button onClick={() => downVote(song)}>{song.downVotes}👎</button>
+              <button onClick={() => upVote(song)}>
+                {song.upVotes}
+                <span className='emoji'>👍</span>
+              </button>
+              <button onClick={() => markAsPlayed(song.id)}>
+                <span className='emoji'>▶️</span>
+              </button>
+              <button onClick={() => downVote(song)}>
+                {song.downVotes}
+                <span className='emoji'>👎</span>
+              </button>
             </div>
           </div>
         ))}
@@ -86,9 +94,17 @@ const SongQueue = ({
               <p className='artist-name'>{song.artistName}</p>
             </div>
             <div className='vote'>
-              <button onClick={() => upVote(song)}>{song.upVotes}👍</button>
-              <button onClick={() => downVote(song)}>{song.downVotes}👎</button>
-              <button onClick={() => markAsPlayed(song.id)}>▶️</button>
+              <button onClick={() => upVote(song)}>
+                {song.upVotes}
+                <span className='emoji'>👍</span>
+              </button>
+              <button onClick={() => downVote(song)}>
+                {song.downVotes}
+                <span className='emoji'>👎</span>
+              </button>
+              <button onClick={() => markAsPlayed(song.id)}>
+                <span className='emoji'>▶️</span>
+              </button>
             </div>
           </div>
         ))}
