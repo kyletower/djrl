@@ -26,6 +26,7 @@ TO DO
 KNOWN ISSUES
 front end:
 
+- user can have a song both up voted and down voted if voting, refreshing, voting again
 - green check mark remains after searching for another song
 - old album cover art remains after new search
 - font doesn't return to white

@@ -7,6 +7,7 @@ import { useState, useEffect } from 'react';
 export const sortByTime = 'sortByTime';
 export const sortByVotes = 'sortByVotes';
 
+// load userId from local storage or store userId in local storage
 let userId = localStorage.getItem('userId');
 if (!userId) {
   localStorage.setItem('userId', Date.now());
@@ -14,6 +15,7 @@ if (!userId) {
 }
 export { userId };
 
+// load id's of tracks the user has up voted
 let userUpVotedArray = [];
 let userUpVoted = localStorage.getItem('userUpVoted');
 if (!userUpVoted) {
@@ -21,6 +23,7 @@ if (!userUpVoted) {
   userUpVoted = localStorage.getItem('userUpVoted');
 }
 
+// load id's of tracks the user has down voted
 let userDownVotedArray = [];
 let userDownVoted = localStorage.getItem('userDownVoted');
 if (!userDownVoted) {
@@ -51,6 +54,7 @@ function App() {
     setShowQueue(!showQueue);
   };
 
+  // load the queue of requested songs
   const loadQueue = () => {
     // console.log({ onlyMyRequests });
     fetch('http://localhost:8000/queue')
@@ -160,7 +164,7 @@ function App() {
     // array.filter((item, index) => array.indexOf(item) === index);
     // array = [... new Set(array)]
     queue.forEach((request) => {
-      // if newSong has laready been requested then don't add it, just up vote it
+      // if newSong has already been requested then don't add it, just up vote it
       if (
         newSong.songTitle === request.songTitle &&
         newSong.artistName === request.artistName

@@ -1,0 +1,245 @@
+{
+  "queue": [
+    {
+      "songTitle": "Stupid Deep",
+      "artistName": "Jon Bellion",
+      "upVotes": 45,
+      "downVotes": 16,
+      "id": 8
+    },
+    {
+      "songTitle": "Astronaut In The Ocean",
+      "artistName": "Masked Wolf",
+      "upVotes": 0,
+      "downVotes": 0,
+      "id": 17
+    },
+    {
+      "songTitle": "The Adventure",
+      "artistName": "Angels & Airwaves",
+      "upVotes": 11,
+      "downVotes": 0,
+      "userId": "1626726645387",
+      "id": 24
+    },
+    {
+      "songTitle": "Good Things Fall Apart (with Jon Bellion)",
+      "artistName": "Illenium",
+      "upVotes": 7,
+      "downVotes": 1,
+      "mbid": "",
+      "userId": "1626726645387",
+      "id": 34
+    },
+    {
+      "songTitle": "All Time Low",
+      "artistName": "Jon Bellion",
+      "upVotes": 4,
+      "downVotes": 0,
+      "mbid": "",
+      "albumArt": "https://lastfm.freetls.fastly.net/i/u/34s/bf8ec059d42aa299906032caabec36fb.png",
+      "userId": "1626726645387",
+      "id": 36
+    },
+    {
+      "songTitle": "Let You Down",
+      "artistName": "NF",
+      "upVotes": 1,
+      "downVotes": 0,
+      "mbid": "",
+      "albumArt": "https://lastfm.freetls.fastly.net/i/u/34s/65613775652434e5111cd24bb02503e4.jpg",
+      "userId": "1626726645387",
+      "id": 37
+    },
+    {
+      "songTitle": "Love The Way You Lie",
+      "artistName": "Eminem",
+      "upVotes": 2,
+      "downVotes": 0,
+      "mbid": "",
+      "albumArt": "https://lastfm.freetls.fastly.net/i/u/34s/d15881b09b6041ccad34c2490de618b3.png",
+      "userId": "1626726645387",
+      "id": 38
+    },
+    {
+      "songTitle": "WHY",
+      "artistName": "NF",
+      "upVotes": 1,
+      "downVotes": 0,
+      "mbid": "",
+      "albumArt": "https://lastfm.freetls.fastly.net/i/u/34s/18cccae9d6cf264218e955604765b269.jpg",
+      "userId": "1626726645387",
+      "id": 39
+    },
+    {
+      "songTitle": "Without Me",
+      "artistName": "Halsey",
+      "upVotes": 1,
+      "downVotes": 0,
+      "mbid": "",
+      "albumArt": "https://lastfm.freetls.fastly.net/i/u/34s/edff11a3a8cb25215e429c6489fe5421.jpg",
+      "userId": "1626726645387",
+      "id": 40
+    },
+    {
+      "songTitle": "Bodak Yellow",
+      "artistName": "Cardi B",
+      "upVotes": 1,
+      "downVotes": 0,
+      "mbid": "",
+      "albumArt": "https://lastfm.freetls.fastly.net/i/u/34s/0863c71d31bb44cac11348120d162976.png",
+      "userId": "1626726645387",
+      "id": 41
+    },
+    {
+      "songTitle": "The Incredible True Story",
+      "artistName": "Logic",
+      "upVotes": 1,
+      "downVotes": 1,
+      "mbid": "",
+      "albumArt": "https://lastfm.freetls.fastly.net/i/u/34s/985c093bb6f966b893f0b7049b6673ef.jpg",
+      "userId": "1626726645387",
+      "id": 42
+    },
+    {
+      "songTitle": "Mansion",
+      "artistName": "NF",
+      "upVotes": 1,
+      "downVotes": 0,
+      "mbid": "",
+      "albumArt": "https://lastfm.freetls.fastly.net/i/u/34s/819f5dabf039ff2f6e8a11f9b4ac4ae0.jpg",
+      "userId": "1626726645387",
+      "id": 43
+    },
+    {
+      "songTitle": "Hello",
+      "artistName": "Adele",
+      "upVotes": 1,
+      "downVotes": 0,
+      "mbid": "",
+      "albumArt": "https://lastfm.freetls.fastly.net/i/u/34s/d7122689fe7250d072f7b10d824f6ca9.jpg",
+      "userId": "1626726645387",
+      "id": 50
+    },
+    {
+      "songTitle": "Coffee",
+      "artistName": "Copeland",
+      "upVotes": 1,
+      "downVotes": 0,
+      "mbid": "20bd5343-0512-4704-86dd-b757b30150f9",
+      "albumArt": "https://lastfm.freetls.fastly.net/i/u/34s/2bfd9f21e7fe1b6baa589a57b31a109a.jpg",
+      "userId": "1626726645387",
+      "id": 53
+    },
+    {
+      "songTitle": "Chin Up",
+      "artistName": "Copeland",
+      "upVotes": 4,
+      "downVotes": 0,
+      "mbid": "67f6f947-abfd-4d46-aecb-3933e0916ca6",
+      "albumArt": "https://lastfm.freetls.fastly.net/i/u/34s/788ce269bc49baad1601e8b1e13fd744.jpg",
+      "userId": "1626726645387",
+      "id": 54
+    },
+    {
+      "songTitle": "Panda",
+      "artistName": "Desiigner",
+      "upVotes": 1,
+      "downVotes": 0,
+      "mbid": "",
+      "albumArt": "https://lastfm.freetls.fastly.net/i/u/34s/343ff4db3d1fe977aaf1fc9bbee169a9.jpg",
+      "userId": "1626726645387",
+      "id": 57
+    },
+    {
+      "songTitle": "All Around Me",
+      "artistName": "Flyleaf",
+      "upVotes": 0,
+      "downVotes": 0,
+      "mbid": "97c21d47-36dd-4998-8ca4-b1fb845ff6cc",
+      "albumArt": "https://lastfm.freetls.fastly.net/i/u/34s/46366a857ac26bf8f20904262c2079d0.jpg",
+      "userId": "1626726645387",
+      "id": 59
+    },
+    {
+      "songTitle": "Light",
+      "artistName": "San Holo",
+      "upVotes": 1,
+      "downVotes": 0,
+      "mbid": "",
+      "albumArt": "https://lastfm.freetls.fastly.net/i/u/34s/b518410e66d83369ba6c90d265ef0ca3.jpg",
+      "userId": "1626726645387",
+      "id": 60
+    },
+    {
+      "songTitle": "We Rise",
+      "artistName": "San Holo",
+      "upVotes": 1,
+      "downVotes": 0,
+      "mbid": "",
+      "albumArt": "https://lastfm.freetls.fastly.net/i/u/34s/d6d4969649c749a3c9bc9f738feaf71f.jpg",
+      "userId": "1626726645387",
+      "id": 61
+    },
+    {
+      "songTitle": "Stargazing",
+      "artistName": "Travi$ Scott",
+      "upVotes": 1,
+      "downVotes": 0,
+      "mbid": "",
+      "albumArt": "https://lastfm.freetls.fastly.net/i/u/34s/d1b3b8bda251e48b5e0715a53931a798.jpg",
+      "userId": "1626726645387",
+      "id": 62
+    },
+    {
+      "songTitle": "The Search - Edit",
+      "artistName": "NF",
+      "upVotes": 1,
+      "downVotes": 0,
+      "mbid": "",
+      "albumArt": "https://lastfm.freetls.fastly.net/i/u/34s/18cccae9d6cf264218e955604765b269.jpg",
+      "userId": "1626726645387",
+      "id": 63
+    },
+    {
+      "songTitle": "Here (In Your Arms)",
+      "artistName": "Hellogoodbye",
+      "upVotes": 0,
+      "downVotes": 0,
+      "mbid": "33b9c2ba-3a4c-41a7-b9f6-af3d3a00382b",
+      "userId": "1626982326889",
+      "id": 64
+    },
+    {
+      "songTitle": "Stressed Out",
+      "artistName": "Twenty One Pilots",
+      "upVotes": 1,
+      "downVotes": 0,
+      "mbid": "",
+      "albumArt": "https://lastfm.freetls.fastly.net/i/u/34s/c5f9c64c345ea23b986e8e39d75d0656.png",
+      "userId": "1626982326889",
+      "id": 65
+    },
+    {
+      "songTitle": "Still into You",
+      "artistName": "Paramore",
+      "upVotes": 1,
+      "downVotes": 0,
+      "mbid": "e05db1d3-52c4-4228-90b2-31b271933c29",
+      "albumArt": "https://lastfm.freetls.fastly.net/i/u/34s/b7a4b3000d0c431fbce299986ac51c48.png",
+      "userId": "1626982326889",
+      "id": 66
+    },
+    {
+      "songTitle": "Wobble",
+      "artistName": "V.I.C.",
+      "upVotes": 1,
+      "downVotes": 0,
+      "mbid": "78a0e2b4-353c-4477-b5d0-62fd761a2f41",
+      "albumArt": "https://lastfm.freetls.fastly.net/i/u/34s/d2c4a1d817484e4ca9cec5988e24c766.png",
+      "userId": "1626982326889",
+      "id": 67
+    }
+  ],
+  "played": []
+}
