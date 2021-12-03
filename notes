@@ -1,44 +1,50 @@
+===
+Resuming development on 2021-12-03
+npm install
 npm start
 npx json-server --watch data/db.json --port 8000
 
 album art cover? https://www.npmjs.com/package/music-cover
 
 Sort db.json
-http://localhost:8000/queue?_sort=upVotes&_order=desc
-
+http://localhost:8000/queue?\_sort=upVotes&\_order=desc
 
 =====
 TO DO
+
 - style from flexbox to grid
 - list all parties
 - create a party
 - join a party
 - only admin can 'mark as played' / remove from queue
-- when there is a change to the queue (song is added, votes are changed), all clients should be 
-updated to reflect that change. (use websockets with my own express server, socket io)
-Spotify, websockets, 
-Already in party ? showQueue : joinParty
-
+- when there is a change to the queue (song is added, votes are changed), all clients should be
+  updated to reflect that change. (use websockets with my own express server, socket io)
+  Spotify, websockets,
+  Already in party ? showQueue : joinParty
 
 ======
 KNOWN ISSUES
 front end:
+
 - green check mark remains after searching for another song
 - old album cover art remains after new search
 - font doesn't return to white
 - album cover art flickers before settling
 - warnings in console
 
-back end: 
+back end:
+
 - server crashes when up/down voting
 
-style: 
+style:
+
 - text overlapping for longer song names
 
 ======
 Idea: A web app for mobile Internet browsers (i.e. Safari, Chrome, Firefox) where party guests can quickly send requests to the DJ as well as vote requests up or down. The app is simple/minimal so as not to distract from the dancing at the party.
 
 Must have:
+
 - No login required
 - generate a userId (datetime.now()?), store in local storage, auth who requested what, throttle votes
   - using uuid
@@ -57,9 +63,10 @@ Must have:
 - Event date
 
 Nice to have:
+
 - Now playing...
 - DJ can see Beats Per Minute (BPM)
-- Timer: if user is on app longer than 2 minutes have a message saying, "don't forget to party" 
+- Timer: if user is on app longer than 2 minutes have a message saying, "don't forget to party"
 - User may choose to create a username for shoutouts associated with their requests
 - Livestream/feed of what’s currently playing and what’s up next and what has been previously played.
 - DJ can reply to user request with, “I got you / Rejected / Already Requested/played / etc”
@@ -80,5 +87,6 @@ Nice to have:
 - Billboard.com charts integration
 
 Design:
+
 - Rob Green
 - Ivan Witteborg: https://www.figma.com/proto/H7sIv4UCnWknWtzl7AT5ppFv/PlayThat_01?node-id=1%3A669&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=1%3A363
