@@ -1,15 +1,4 @@
 {
-  "queue": [
-    {
-      "songTitle": "The Search",
-      "artistName": "NF",
-      "upVotes": 1,
-      "downVotes": 0,
-      "mbid": "",
-      "albumArt": "https://lastfm.freetls.fastly.net/i/u/34s/03125956378d531a44e1b7da89aae795.png",
-      "userId": "1626982326889",
-      "id": 1
-    }
-  ],
+  "queue": [],
   "played": []
 }

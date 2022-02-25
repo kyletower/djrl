@@ -178,7 +178,7 @@ function App() {
     // update gui to a checkmark even if it's a duplicate for user feedback
     if (duplicate) {
       // change color to green and switch + to ✅ when added
-      event.target.parentElement.previousSibling.classList.add(
+      event.target.parentElement.parentElement.previousSibling.classList.add(
         'added-to-queue'
       );
       event.target.innerText = '✅';
@@ -200,7 +200,9 @@ function App() {
       });
 
     // change color to green and switch + to ✅ when added
-    event.target.parentElement.previousSibling.classList.add('added-to-queue');
+    event.target.parentElement.parentElement.previousSibling.classList.add(
+      'added-to-queue'
+    );
     event.target.innerText = '✅';
     console.log(event);
   };
